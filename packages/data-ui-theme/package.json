@@ -1,0 +1,33 @@
+{
+  "name": "@itr-components-library/theme",
+  "version": "0.0.48",
+  "description": "Themes for the components",
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "babel src/ -d build/",
+    "dev": "babel src/ -d build/ --watch",
+    "dev:nowatch": "babel src/ -d build/",
+    "prepublish": "npm run build",
+    "test": "jest --colors --verbose --coverage"
+  },
+  "repository": "https://github.com/itReverie/itr-components-library.git",
+  "keywords": [
+    "react-components",
+    "visualization",
+    "theme"
+  ],
+  "author": "Brenda Jimenez",
+  "license": "MIT",
+  "homepage": "https://github.com/itReverie/itr-components-library#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-jest": "^20.0.3",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-preset-airbnb": "^2.2.3",
+    "jest": "^20.0.3"
+  }
+}
