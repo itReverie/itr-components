@@ -1,4 +1,4 @@
-# data-ui
+# itr-components
 A collection of custom + wrapped components for nice UIs.
 
 ## Live Playground
