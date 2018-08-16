@@ -1,15 +1,20 @@
 {
-  "name": "@components-library/basics",
-  "version": "0.0.50",
-  "description": "A package with the basic elements for a site.",
+  "name": "@itr-components/basics",
+  "version": "0.0.1",
+  "description": "A package with the basic component elements for a site.",
   "main": "build/index.js",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "webpack -p && npm run copy-styles",
     "copy-styles": "cp ./node_modules/react-select/dist/react-select.min.css ./build/react-select.min.css",
     "dev": "webpack --progress --colors --watch",
     "dev:nowatch": "webpack --progress --colors",
     "prepublish": "npm run build",
-    "test": "jest --colors --verbose --coverage"
+    "test": "jest --colors --verbose --coverage",
+    "semantic-release": "semantic-release"
   },
   "repository": "https://github.com/itreverie/itr-components-library",
   "keywords": [
@@ -17,7 +22,7 @@
     "reusable",
     "components"
   ],
-  "author": "Brenda Jimenez ",
+  "author": "Brenda Jimenez",
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.5.10",
@@ -38,6 +43,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-test-renderer": "^16.0.0",
+    "semantic-release": "^15.9.8",
     "style-loader": "^0.18.2",
     "webpack": "^2.4.1"
   },
