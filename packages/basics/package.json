@@ -1,6 +1,6 @@
 {
-  "name": "@itr-components/basics",
-  "version": "0.0.1",
+  "name": "@itreverie/itr-components-basics",
+  "version": "0.0.2",
   "description": "A package with the basic component elements for a site.",
   "main": "build/index.js",
   "private": false,
